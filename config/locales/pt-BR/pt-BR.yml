@@ -1,4 +1,6 @@
 pt-BR:
   app:
     title: Quadro de Vagas
+  button:
+    login: Entrar
 
