@@ -8,8 +8,8 @@ describe "Usuário de Empresa se cadastra" do
     click_on 'Cadastrar'
     fill_in 'E-mail', with: 'user@email.com'
     fill_in 'Senha', with: 'p4ssw0rd'
-    fill_in 'Confirmar senha', with: 'p4ssw0rd'
-    click_on 'Salvar'
+    fill_in 'Confirme a senha', with: 'p4ssw0rd'
+    click_on 'Cadastrar'
 
     expect(page).to have_content 'Cadastro concluído com sucesso!'
     expect(page).to have_content 'user@email.com'
