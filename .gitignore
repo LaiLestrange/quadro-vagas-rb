@@ -39,3 +39,4 @@
 /node_modules
 
 coverage
+.byebug_history

@@ -1,6 +1,10 @@
 <h1><%= I18n.t("app.title") %></h1>
 
 <div>
-  <%= link_to  I18n.t("button.login"), new_user_session_path %>
+<% if user_signed_in? %>
+  <%= current_user.email %>
+<% else %>
+  <%= link_to  I18n.t("devise.sessions.new.sign_in"), new_user_session_path%>
+<% end %>
 </div>
 

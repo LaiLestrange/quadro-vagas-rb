@@ -117,7 +117,7 @@ pt-BR:
       already_signed_out: Logout efetuado com sucesso.
       choose_profile: Escolha a forma de login
       new:
-        sign_in: Login
+        sign_in: Entrar
       signed_in: Login efetuado com sucesso.
       signed_out: Logout efetuado com sucesso.
     shared:
