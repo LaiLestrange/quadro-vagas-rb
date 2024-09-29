@@ -1,8 +1,8 @@
-require 'rails_helper'
+require "rails_helper"
 
 describe "Usuário faz login" do
-  it 'com sucesso' do
-    create(:user, email: 'user@email.com', password: 'passw0rd')
+  it "com sucesso" do
+    create(:user, email: "user@email.com", password: "passw0rd")
 
     visit root_path
     click_on "Entrar"
@@ -21,6 +21,6 @@ describe "Usuário faz login" do
     visit root_path
     click_on "Logout"
 
-    expect(page).to have_content 'Logout efetuado com sucesso.'
+    expect(page).to have_content "Logout efetuado com sucesso."
   end
 end

@@ -3,3 +3,10 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 
 require:
   - rubocop-rails
+
+AllCops:
+  NewCops: enable
+
+Style/StringLiterals:
+  Include:
+    - "spec/**/*"

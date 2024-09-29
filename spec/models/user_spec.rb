@@ -1,9 +1,9 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe User, type: :model do
-  describe '#valid?' do
-    it 'campos obrigatórios' do
-      user = build(:user, email: '', password: '')
+  describe "#valid?" do
+    it "campos obrigatórios" do
+      user = build(:user, email: "", password: "")
 
       expect(user).not_to be_valid
       expect(user.errors).to include(:email)
@@ -11,14 +11,14 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe '#unique?' do
-    it 'email é único' do
+  describe "#unique?" do
+    it "email é único" do
       User.create!(
-        email: 'unique@email.com',
-        password: 'p4s$w0rd'
+        email: "unique@email.com",
+        password: "p4s$w0rd"
       )
 
-      user = FactoryBot.build(:user, email: 'unique@email.com')
+      user = FactoryBot.build(:user, email: "unique@email.com")
 
       user.valid?
       result = user.errors.include?(:email)
