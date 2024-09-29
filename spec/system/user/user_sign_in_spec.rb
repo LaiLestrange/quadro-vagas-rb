@@ -15,7 +15,7 @@ describe "Usuário faz login" do
   end
 
   it "e faz logout" do
-    user = FactoryBot.create(:user)
+    user = create(:user)
 
     login_as user, scope: :user
     visit root_path
