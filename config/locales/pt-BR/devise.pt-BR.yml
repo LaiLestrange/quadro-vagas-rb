@@ -118,6 +118,7 @@ pt-BR:
       choose_profile: Escolha a forma de login
       new:
         sign_in: Entrar
+        sign_in_user: Login
       signed_in: Login efetuado com sucesso.
       signed_out: Logout efetuado com sucesso.
     shared:

@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   describe '#valid?' do
     it 'campos obrigatórios' do
-      user = FactoryBot.build(:user, email: '', password: '')
+      user = build(:user, email: '', password: '')
 
       expect(user).not_to be_valid
       expect(user.errors).to include(:email)
